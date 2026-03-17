@@ -12,12 +12,7 @@ import cg.demos.springcore_assignments.beans.SBU;
 public class App {
     public static void main(String[] args) {
     	ApplicationContext ac = new ClassPathXmlApplicationContext("configurations.xml");
-    	//Assignment 1.1, 1.2:
-//    	Employee e1 = (Employee) ac.getBean("emp1");
-//    	e1.displayDetails();
-    	//Assignment 1.3:
-    	SBU s1 = (SBU) ac.getBean("sbu1");
-    	s1.displaySbuDetails();
-//    	
+   	Employee e1 = (Employee) ac.getBean("emp1");
+   	e1.displayDetails();
     }
 }

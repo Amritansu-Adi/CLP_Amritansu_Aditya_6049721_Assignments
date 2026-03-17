@@ -1,4 +1,4 @@
-package cg.demo.associationmapping.assignment;
+package Assignment3and4_11_12_March;
 
 import java.util.List;
 
@@ -14,6 +14,9 @@ import jakarta.persistence.criteria.*;
  */
 public class daoApp
 {
+
+
+
     
     	EntityManagerFactory emf = Persistence.createEntityManagerFactory("JPA-PU");
    	 	EntityManager em = emf.createEntityManager();
@@ -32,7 +35,6 @@ public class daoApp
    	 	public Department1 findDeptByName(String name) {
 //   	 		TypedQuery <Department1> toquery = em.createQuery("Select d from Department d where d.name=:name ", Department1.class);
 //   	 		tquery.setParameter("name", name);
-//	   	 	List<Department1> list = tquery.getResultList();
    	 	CriteriaBuilder cb= em.getCriteriaBuilder();
  		CriteriaQuery <Department1> cq= cb.createQuery(Department1.class);
  		Root<Department1> root = cq.from(Department1.class);

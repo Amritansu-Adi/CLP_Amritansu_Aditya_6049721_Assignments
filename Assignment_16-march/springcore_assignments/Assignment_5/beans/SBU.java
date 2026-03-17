@@ -7,54 +7,16 @@ public class SBU {
 	private String sbuHead;
 	private List<Employee> empList;
 	
-// Assignment 1.1 and 1.2 for constructor injection:
-//	public SBU(int sbuId, String sbuName, String sbuHead) {
-//		super();
-//		this.sbuId = sbuId;
-//		this.sbuName = sbuName;
-//		this.sbuHead = sbuHead;
-//	}
-	
-//	Assignment 1.3 for setter injection:
-	public SBU() {
+    public SBU(int sbuId, String sbuName, String sbuHead) {
 		super();
-	}
-	
-	public int getSbuId() {
-		return sbuId;
-	}
-
-	public void setSbuId(int sbuId) {
 		this.sbuId = sbuId;
-	}
-
-	public String getSbuName() {
-		return sbuName;
-	}
-
-	public void setSbuName(String sbuName) {
 		this.sbuName = sbuName;
-	}
-
-	public String getSbuHead() {
-		return sbuHead;
-	}
-
-	public void setSbuHead(String sbuHead) {
 		this.sbuHead = sbuHead;
 	}
-	public List<Employee> getEmpList() {
-		return empList;
+    
+    public String getSbuDetails() {
+		return "SBU Details\n ---------------------- \n SBU ID:" + sbuId + "\n SBU Name: " + sbuName + "\n SBU Head: " + sbuHead;
 	}
-
-	public void setEmpList(List<Employee> empList) {
-		this.empList = empList;
-	}
-	
-//	public String getSbuDetails() {
-//		return "SBU Details\n ---------------------- \n SBU ID:" + sbuId + "\n SBU Name: " + sbuName + "\n SBU Head: " + sbuHead;
-//	}
-
 	public void displaySbuDetails() {
 		System.out.println("SBU Details");
 		System.out.println("----------------------");

@@ -1,4 +1,4 @@
-package cg.demo.associationmapping.assignment;
+package Assignment3and4_11_12_March;
 
 
 import java.util.List;
@@ -16,14 +16,22 @@ public class Department1 {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int Did;
 	
+	
 	private String name;
 	
 	private String managername;
 	
+
+
+
+
+
 	@OneToMany(cascade = CascadeType.ALL, mappedBy= "dept")
 	private List<Employee1> emp;
 
+
 	public List<Employee1> getEmp() {
+
 		return emp;
 	}
 

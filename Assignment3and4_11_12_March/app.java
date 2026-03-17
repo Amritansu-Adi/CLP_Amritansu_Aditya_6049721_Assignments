@@ -1,4 +1,4 @@
-package cg.demo.associationmapping.assignment;
+package Assignment3and4_11_12_March;
 
 
 
